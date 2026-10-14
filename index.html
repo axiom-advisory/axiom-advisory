@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Advisory | Tax, Accounting & Corporate Services</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#28b8c8',
+                            'teal-hover': '#219dae',
+                            'teal-light': '#eef9fa',
+                            slate: '#335362',
+                            'slate-dark': '#233a46',
+                            'slate-deep': '#162730',
+                            divider: '#b4c8ce',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark-glass {
+            background: rgba(28, 57, 70, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-brand-teal selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-brand-slate-deep text-slate-300 text-xs py-2 px-4 border-b border-brand-slate-dark">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span class="inline-flex items-center gap-1.5 text-brand-teal font-semibold">
+                    <i class="fa-solid fa-circle-dot text-[10px] animate-pulse">
+                    </i> FBR Notice:
+                </span>
+                <span>Active Taxpayer List (ATL) updated for TY 2025-2026. Verify status today.</span>
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="tel:+9242111000111" class="hover:text-brand-teal transition-colors"><i class="fa-solid fa-phone me-1 text-brand-teal"></i> +92 (42) 111-000-111</a>
+                <a href="mailto:info@axiomtax.pk" class="hover:text-brand-teal transition-colors"><i class="fa-solid fa-envelope me-1 text-brand-teal"></i> info@axiomtax.pk</a>
+                <span class="hidden lg:inline"><i class="fa-solid fa-location-dot me-1 text-brand-teal"></i> Lahore | Karachi | Islamabad</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-50 bg-brand-slate-dark/95 backdrop-blur-md border-b border-brand-slate text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo (Vector matched to image_74e0f8.png) -->
+                <a href="#" class="flex items-center gap-3.5 group py-2">
+                    <div class="flex items-center gap-3">
+                        <!-- Precise Geometric SVG Icon -->
+                        <svg class="h-10 w-auto transition-transform group-hover:scale-105 shrink-0" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Top Swoosh Blade -->
+                            <path d="M 15,48 C 15,32 38,12 88,10 C 70,18 42,32 36,48 C 32,58 38,62 50,62 C 68,62 88,48 88,48 C 88,48 55,62 38,72 C 26,79 15,64 15,48 Z" fill="#28b8c8"/>
+                            <!-- Middle Parallel Blade -->
+                            <path d="M 15,76 C 15,60 38,40 88,38 C 70,46 42,60 36,76 C 32,86 38,90 50,90 C 68,90 88,76 88,76 C 88,76 55,90 38,100 C 26,107 15,92 15,76 Z" fill="#28b8c8"/>
+                            <!-- Bottom Swoop Tail curving down to point on left -->
+                            <path d="M 15,78 C 15,92 28,108 28,114 C 28,114 42,95 58,85 C 40,88 24,88 15,78 Z" fill="#28b8c8"/>
+                            <!-- Nested Lower Right Triangle -->
+                            <path d="M 60,90 L 88,74 L 88,106 Z" fill="#28b8c8"/>
+                        </svg>
+                        
+                        <!-- Thin Vertical Divider Line -->
+                        <div class="h-9 w-[1.5px] bg-[#b4c8ce] mx-0.5 opacity-80"></div>
+                        
+                        <!-- Typography Matching Logo Image -->
+                        <div class="flex flex-col justify-center">
+                            <span class="text-2xl font-black tracking-normal text-white leading-none font-sans" style="font-weight: 900; letter-spacing: -0.02em;">AXIOM</span>
+                            <span class="text-[10px] tracking-[0.22em] text-[#b4c8ce] font-bold uppercase block mt-1 leading-none">ADVISORY</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#services" class="text-slate-200 hover:text-brand-teal transition-colors">Services</a>
+                    <a href="#calculator" class="text-slate-200 hover:text-brand-teal transition-colors">Tax Calculator</a>
+                    <a href="#calendar" class="text-slate-200 hover:text-brand-teal transition-colors">Tax Calendar</a>
+                    <a href="#knowledge" class="text-slate-200 hover:text-brand-teal transition-colors">Knowledge Center</a>
+                    <a href="#contact" class="text-slate-200 hover:text-brand-teal transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA & Actions -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="#calculator" class="px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-slate-200 border border-brand-accent/30 hover:border-brand-teal rounded-lg transition-all hover:text-brand-teal">
+                        <i class="fa-solid fa-calculator me-1.5 text-brand-teal"></i> Calculate Tax
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 text-xs font-bold uppercase tracking-wider bg-brand-teal hover:bg-brand-teal-hover text-white rounded-lg shadow-lg shadow-brand-teal/20 transition-all hover:scale-105">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-slate-deep border-b border-brand-slate px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-brand-slate-dark hover:text-brand-teal">Services</a>
+            <a href="#calculator" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-brand-slate-dark hover:text-brand-teal">Tax Calculator</a>
+            <a href="#calendar" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-brand-slate-dark hover:text-brand-teal">Tax Calendar</a>
+            <a href="#knowledge" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-brand-slate-dark hover:text-brand-teal">Knowledge Center</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-brand-slate-dark hover:text-brand-teal">Contact</a>
+            <div class="pt-4 flex flex-col gap-2">
+                <a href="#contact" class="w-full text-center py-3 bg-brand-teal text-white font-bold rounded-lg uppercase tracking-wider text-xs">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-brand-slate-dark text-white overflow-hidden py-20 lg:py-28">
+        <!-- Background Accents -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#20B2AA_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-teal/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-slate-deep border border-brand-slate text-brand-teal text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved text-brand-teal"></i> FBR & SECP Registered Corporate Advisory
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Navigate Tax Complexities With <span class="text-brand-teal">Precision & Confidence</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Pakistan’s premier corporate tax, FBR compliance, and SECP advisory firm. We safeguard your assets, optimize income tax liability, and ensure 100% active filer status for individuals, freelancers, and corporations.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#contact" class="px-8 py-4 bg-brand-teal hover:bg-brand-teal-hover text-white font-bold rounded-xl shadow-xl shadow-brand-teal/20 transition-all hover:scale-105 text-center text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                            <span>Book Confidential Callback</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#calculator" class="px-8 py-4 bg-brand-slate-deep hover:bg-brand-slate border border-brand-accent/30 text-white font-semibold rounded-xl transition-all text-center text-sm flex items-center justify-center gap-2 hover:border-brand-teal">
+                            <i class="fa-solid fa-calculator text-brand-teal"></i>
+                            <span>Calculate Tax (TY 2025-26)</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-brand-slate grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-brand-teal">10,000+</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Tax Returns Filed</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">FBR Audit Success</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">PKR 1.2B+</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Tax Liabilities Saved</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Feature Card -->
+                <div class="lg:col-span-5">
+                    <div class="dark-glass rounded-2xl p-6 sm:p-8 shadow-2xl relative border border-brand-slate">
+                        <div class="flex items-center justify-between pb-6 border-b border-brand-slate">
+                            <div>
+                                <h3 class="text-lg font-bold text-white">FBR Active Taxpayer Status</h3>
+                                <p class="text-xs text-slate-400">Check Filer vs Non-Filer Status Benefits</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">
+                                ATL Live
+                            </span>
+                        </div>
+
+                        <div class="space-y-4 my-6">
+                            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-slate-deep/70 border border-brand-slate">
+                                <i class="fa-solid fa-percent text-brand-teal text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">50% Lower Withholding Tax</h4>
+                                    <p class="text-xs text-slate-400">Filers save on banking transfers, property purchases, vehicle registration, and cash withdrawals.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-slate-deep/70 border border-brand-slate">
+                                <i class="fa-solid fa-building-columns text-emerald-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Exemption from Penalty Surcharges</h4>
+                                    <p class="text-xs text-slate-400">Avoid 200% non-filer penalty tax on motor vehicle registrations & immovable property.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-brand-slate-deep/70 border border-brand-slate">
+                                <i class="fa-solid fa-globe text-sky-400 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">0.25% Reduced IT Freelancer Tax</h4>
+                                    <p class="text-xs text-slate-400">Export software and IT services legally with concessional 0.25% withholding tax rate.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="block w-full text-center py-3 rounded-xl bg-brand-slate hover:bg-brand-slate/80 text-brand-teal font-semibold text-xs tracking-wider uppercase border border-brand-accent/30 transition-colors">
+                            Verify Your ATL Status With Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-brand-slate uppercase tracking-widest bg-brand-teal-light px-3.5 py-1.5 rounded-full border border-brand-teal/20">Corporate & Individual Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate mt-4 tracking-tight">Comprehensive Tax, Accounting & Legal Advisory</h2>
+                <p class="text-slate-600 mt-3 text-base">From individual tax return filing to multi-national corporate structuring, our certified chartered accountants and tax attorneys deliver end-to-end compliance.</p>
+            </div>
+
+            <!-- Grid of 6 Services -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">Income Tax Return Filing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Complete preparation and e-filing of annual income tax returns on FBR IRIS portal for salaried individuals, business owners, and freelancers. Wealth statement reconciliation included.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Active Taxpayer List (ATL) activation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Wealth Statement Reconciliation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Tax refund & adjustment claims</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-receipt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">Sales Tax / FBR & PRA Registration</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Sales tax registration (STRN) with FBR and provincial authorities (PRA, SRB, KPRA, BRA). E-filing of monthly sales tax returns and annexures.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Monthly Annexure-C & Summary filing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Input tax credit optimization</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> POS integration with FBR system</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">SECP Corporate Compliance</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Company incorporation (Private Limited, Single Member, LLC, LLPs) with SECP. Annual statutory filing (Form A/29), director changes, and share transfers.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> 48-Hour Fast-Track Company Formation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> SECP Statutory Filings & Form 29</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Foreign Direct Investment (FDI) setup</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-journal-whills"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">Bookkeeping & Payroll Management</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        End-to-end cloud accounting (QuickBooks, Xero), monthly general ledger closing, withholding tax deduction calculations, and payroll handling.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Monthly Financial Statement Preparation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> WHT Deductions & Statements (U/S 165)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> EOBI & Provincial Social Security Filing</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gavel"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">Tax Audit Representation & Appeals</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Legal representation before FBR Commissioners, Appellate Tribunals, and Courts for tax notices (U/S 122, 177, 214C), audits, and penalty appeals.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> FBR Notice Draft Reply & Representation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> CIR (Appeals) & ATIR Legal Proceedings</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Stay of Tax Recovery Orders</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-2xl p-8 hover:shadow-2xl hover:-translate-y-1 transition-all group border border-slate-200">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-slate text-brand-teal flex items-center justify-center text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-slate mb-3 group-hover:text-brand-teal transition-colors">IT & Freelancer Special Tax Suite</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                        Customized tax structuring for software houses, remote developers, and IT exporters. PSEB Registration, SBP Remittance reconciliation & 0.25% tax lock.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> PSEB & Tech Council Certifications</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Foreign Remittance PRC Documentation</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-teal"></i> Concessional 0.25% Tax Rate Lock</li>
+                    </ul>
+                    <a href="#contact" class="text-xs font-bold text-brand-slate uppercase tracking-wider flex items-center gap-1 group-hover:gap-2 transition-all">
+                        Inquire Now <i class="fa-solid fa-arrow-right text-brand-teal"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE TAX CALCULATOR SECTION -->
+    <section id="calculator" class="py-20 bg-brand-slate-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-teal uppercase tracking-widest bg-brand-slate-deep px-3.5 py-1.5 rounded-full border border-brand-slate">Updated for Tax Year 2025 - 2026</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Pakistan Income Tax Calculator</h2>
+                <p class="text-slate-300 mt-2 text-sm sm:text-base">Calculate your tax liability, effective tax rate, and net take-home salary in real-time based on the latest FBR Tax Slabs.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Calculator Inputs Controls -->
+                <div class="lg:col-span-6 bg-brand-slate/90 rounded-2xl p-6 sm:p-8 border border-brand-accent/30 shadow-xl">
+                    <!-- Taxpayer Category Toggle -->
+                    <div class="mb-6">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-3">Select Income Category</label>
+                        <div class="grid grid-cols-2 gap-3 p-1.5 bg-brand-slate-deep rounded-xl border border-brand-slate">
+                            <button type="button" id="type-salary" onclick="setTaxType('salary')" class="py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-brand-teal text-white shadow-md">
+                                <i class="fa-solid fa-user me-1.5"></i> Salaried Person
+                            </button>
+                            <button type="button" id="type-business" onclick="setTaxType('business')" class="py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white">
+                                <i class="fa-solid fa-briefcase me-1.5"></i> Business / Freelancer
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Frequency Toggle & Income Input -->
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label for="income-input" class="text-xs font-bold uppercase tracking-wider text-slate-300">Enter Income Amount (PKR)</label>
+                                <div class="flex items-center gap-2 bg-brand-slate-deep px-3 py-1 rounded-lg border border-brand-slate text-xs">
+                                    <span class="text-slate-400">Period:</span>
+                                    <button type="button" id="freq-monthly" onclick="setFrequency('monthly')" class="text-brand-teal font-bold">Monthly</button>
+                                    <span class="text-slate-600">|</span>
+                                    <button type="button" id="freq-yearly" onclick="setFrequency('yearly')" class="text-slate-400 hover:text-white">Annual</button>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400 font-bold text-sm">PKR</span>
+                                <input type="number" id="income-input" value="250000" min="0" step="5000" oninput="calculateTax()" class="w-full pl-14 pr-4 py-3.5 bg-brand-slate-deep border border-brand-slate rounded-xl text-white font-extrabold text-lg focus:outline-none focus:border-brand-teal transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Income Slider for Quick Drag -->
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-400 mb-1">
+                                <span>Quick Adjust</span>
+                                <span id="slider-val-display" class="font-bold text-brand-teal">PKR 250,000 / month</span>
+                            </div>
+                            <input type="range" id="income-slider" min="50000" max="2000000" step="25000" value="250000" oninput="syncSliderToInput(this.value)" class="w-full h-2 bg-brand-slate-deep rounded-lg appearance-none cursor-pointer accent-brand-teal">
+                        </div>
+
+                        <!-- Deductions & Exemptions Quick Options -->
+                        <div class="pt-4 border-t border-brand-slate/60 space-y-3">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300">Tax Deductions & Allowances</label>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-[11px] text-slate-400 mb-1">Annual Zakat Paid (PKR)</label>
+                                    <input type="number" id="zakat-input" value="0" min="0" oninput="calculateTax()" class="w-full px-3 py-2 bg-brand-slate-deep border border-brand-slate rounded-lg text-xs text-white focus:border-brand-teal">
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] text-slate-400 mb-1">Annual WHT Already Deducted</label>
+                                    <input type="number" id="wht-input" value="0" min="0" oninput="calculateTax()" class="w-full px-3 py-2 bg-brand-slate-deep border border-brand-slate rounded-lg text-xs text-white focus:border-brand-teal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calculator Results Output Panel -->
+                <div class="lg:col-span-6 bg-brand-slate-deep rounded-2xl p-6 sm:p-8 border border-brand-slate shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-24 -right-24 w-48 h-48 bg-brand-teal/10 rounded-full blur-2xl"></div>
+
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-brand-teal mb-6 flex items-center justify-between border-b border-brand-slate pb-4">
+                        <span>Tax Breakdown Summary</span>
+                        <span id="tax-year-badge" class="bg-brand-slate px-2.5 py-1 rounded text-[10px] text-slate-300">TY 2025-26</span>
+                    </h3>
+
+                    <!-- Key Figures Highlight Cards -->
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="bg-brand-slate-dark/90 p-4 rounded-xl border border-brand-slate">
+                            <p class="text-[11px] text-slate-400 uppercase font-semibold">Monthly Income Tax</p>
+                            <p id="res-monthly-tax" class="text-xl sm:text-2xl font-extrabold text-brand-teal mt-1">PKR 17,500</p>
+                        </div>
+                        <div class="bg-brand-slate-dark/90 p-4 rounded-xl border border-brand-slate">
+                            <p class="text-[11px] text-slate-400 uppercase font-semibold">Net Take-Home Salary</p>
+                            <p id="res-monthly-takehome" class="text-xl sm:text-2xl font-extrabold text-emerald-400 mt-1">PKR 232,500</p>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Line-Item Breakdowns -->
+                    <div class="space-y-3 text-xs sm:text-sm text-slate-300 border-t border-brand-slate pt-4">
+                        <div class="flex justify-between py-1.5 border-b border-brand-slate/60">
+                            <span class="text-slate-400">Annual Gross Income:</span>
+                            <span id="res-annual-gross" class="font-bold text-white">PKR 3,000,000</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-brand-slate/60">
+                            <span class="text-slate-400">Taxable Income (After Deductions):</span>
+                            <span id="res-taxable-income" class="font-bold text-white">PKR 3,000,000</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-brand-slate/60">
+                            <span class="text-slate-400">Applicable Tax Bracket (Slab):</span>
+                            <span id="res-slab-info" class="font-semibold text-brand-teal text-right">Rs. 2,200,000 to Rs. 3,200,000</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-brand-slate/60">
+                            <span class="text-slate-400">Annual Income Tax Liability:</span>
+                            <span id="res-annual-tax" class="font-extrabold text-brand-teal">PKR 210,000</span>
+                        </div>
+                        <div class="flex justify-between py-1.5 border-b border-brand-slate/60">
+                            <span class="text-slate-400">Effective Tax Rate:</span>
+                            <span id="res-effective-rate" class="font-bold text-white">7.00%</span>
+                        </div>
+                        <div class="flex justify-between py-1.5">
+                            <span class="text-slate-400">Net Tax Payable (After WHT):</span>
+                            <span id="res-net-payable" class="font-extrabold text-emerald-400">PKR 210,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="mt-6 pt-4 border-t border-brand-slate flex flex-col sm:flex-row gap-3">
+                        <a href="#contact" class="flex-1 py-3 text-center bg-brand-teal hover:bg-brand-teal-hover text-white font-bold rounded-xl text-xs uppercase tracking-wider transition-all">
+                            File Return With This Computation
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tax Slabs Reference Table Collapsible/Accordion -->
+            <div class="mt-12 bg-brand-slate/60 rounded-2xl p-6 border border-brand-slate">
+                <button onclick="toggleSlabsTable()" class="w-full flex justify-between items-center text-left text-sm font-bold text-brand-teal focus:outline-none">
+                    <span><i class="fa-solid fa-list-ol me-2"></i> View Official FBR Salaried Income Tax Slabs (Tax Year 2025-2026)</span>
+                    <i id="slabs-icon" class="fa-solid fa-chevron-down transition-transform"></i>
+                </button>
+                <div id="slabs-container" class="hidden mt-6 overflow-x-auto">
+                    <table class="w-full text-left text-xs text-slate-300">
+                        <thead class="bg-brand-slate-deep uppercase text-[10px] tracking-wider text-slate-400 border-b border-brand-slate">
+                            <tr>
+                                <th class="p-3">Slab</th>
+                                <th class="p-3">Taxable Income Range (Annual)</th>
+                                <th class="p-3">Rate of Income Tax</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-brand-slate">
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 1</td>
+                                <td class="p-3">Up to Rs. 600,000</td>
+                                <td class="p-3 text-emerald-400 font-semibold">0%</td>
+                            </tr>
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 2</td>
+                                <td class="p-3">Rs. 600,001 to Rs. 1,200,000</td>
+                                <td class="p-3">5% of amount exceeding Rs. 600,000</td>
+                            </tr>
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 3</td>
+                                <td class="p-3">Rs. 1,200,001 to Rs. 2,200,000</td>
+                                <td class="p-3">Rs. 30,000 + 15% of amount exceeding Rs. 1,200,000</td>
+                            </tr>
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 4</td>
+                                <td class="p-3">Rs. 2,200,001 to Rs. 3,200,000</td>
+                                <td class="p-3">Rs. 180,000 + 25% of amount exceeding Rs. 2,200,000</td>
+                            </tr>
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 5</td>
+                                <td class="p-3">Rs. 3,200,001 to Rs. 4,100,000</td>
+                                <td class="p-3">Rs. 430,000 + 30% of amount exceeding Rs. 3,200,000</td>
+                            </tr>
+                            <tr class="hover:bg-brand-slate-dark/50">
+                                <td class="p-3 font-bold text-brand-teal">Slab 6</td>
+                                <td class="p-3">Exceeding Rs. 4,100,000</td>
+                                <td class="p-3">Rs. 700,000 + 35% of amount exceeding Rs. 4,100,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- COMPLIANCE CALENDAR SECTION -->
+    <section id="calendar" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold text-brand-slate uppercase tracking-widest bg-brand-teal-light px-3 py-1 rounded-full border border-brand-teal/20">FBR & SECP Statutory Deadlines</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate mt-3 tracking-tight">Tax Compliance Calendar 2026</h2>
+                </div>
+                <p class="text-slate-600 text-sm max-w-md mt-2 md:mt-0">Never miss a statutory deadline. Avoid FBR default surcharges, ATL deactivation, and SECP late filing penalties.</p>
+            </div>
+
+            <!-- Calendar Tabs Filters -->
+            <div class="flex flex-wrap gap-2 mb-8 border-b border-slate-300 pb-4">
+                <button onclick="filterCalendar('all')" class="cal-tab active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-slate text-brand-teal shadow">All Deadlines</button>
+                <button onclick="filterCalendar('salestax')" class="cal-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">Sales Tax (Monthly)</button>
+                <button onclick="filterCalendar('wht')" class="cal-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">Withholding Tax (Quarterly)</button>
+                <button onclick="filterCalendar('annual')" class="cal-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">Annual Income Tax</button>
+                <button onclick="filterCalendar('secp')" class="cal-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 border border-slate-300">SECP Statutory</button>
+            </div>
+
+            <!-- Calendar Event Cards Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="calendar-grid">
+                
+                <!-- Card 1 -->
+                <div class="cal-item salestax glass-card p-6 rounded-2xl border border-slate-200 hover:border-brand-teal transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800">Monthly</span>
+                        <span class="text-xs font-extrabold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200"><i class="fa-regular fa-clock me-1"></i> 15th Every Month</span>
+                    </div>
+                    <h4 class="text-base font-bold text-brand-slate mb-2">Monthly Sales Tax Return (Annex-C)</h4>
+                    <p class="text-slate-600 text-xs mb-4">Payment of sales tax liability and e-filing of sales tax return on FBR Iris / Provincial portals (PRA, SRB).</p>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-semibold text-slate-500">Target: All STRN Holders</span>
+                        <button onclick="alert('Added 15th Sales Tax Return deadline reminder to your calendar!')" class="text-brand-slate hover:text-brand-teal text-xs font-bold"><i class="fa-regular fa-calendar-plus text-sm"></i> Remind</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="cal-item wht glass-card p-6 rounded-2xl border border-slate-200 hover:border-brand-teal transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-purple-100 text-purple-800">Quarterly</span>
+                        <span class="text-xs font-extrabold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200"><i class="fa-regular fa-clock me-1"></i> Oct 20 / Jan 20</span>
+                    </div>
+                    <h4 class="text-base font-bold text-brand-slate mb-2">Quarterly Withholding Statement (U/S 165)</h4>
+                    <p class="text-slate-600 text-xs mb-4">Filing quarterly statement of tax deducted from salary, vendors, services, and contracts under Section 165.</p>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-semibold text-slate-500">Target: Withholding Agents</span>
+                        <button onclick="alert('Added Withholding Tax Statement deadline to your calendar!')" class="text-brand-slate hover:text-brand-teal text-xs font-bold"><i class="fa-regular fa-calendar-plus text-sm"></i> Remind</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="cal-item annual glass-card p-6 rounded-2xl border border-slate-200 hover:border-brand-teal transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-teal-100 text-teal-900">Annual</span>
+                        <span class="text-xs font-extrabold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200"><i class="fa-regular fa-clock me-1"></i> Sep 30 / Dec 31</span>
+                    </div>
+                    <h4 class="text-base font-bold text-brand-slate mb-2">Annual Income Tax Return (TY 2026)</h4>
+                    <p class="text-slate-600 text-xs mb-4">Final deadline for Salaried Persons (30th Sept) and Companies / Business Individuals (31st Dec) to remain on ATL.</p>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-semibold text-slate-500">Target: All Taxpayers</span>
+                        <button onclick="alert('Added Annual Income Tax Return deadline to your calendar!')" class="text-brand-slate hover:text-brand-teal text-xs font-bold"><i class="fa-regular fa-calendar-plus text-sm"></i> Remind</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="cal-item secp glass-card p-6 rounded-2xl border border-slate-200 hover:border-brand-teal transition-all">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-100 text-emerald-900">SECP</span>
+                        <span class="text-xs font-extrabold text-rose-600 bg-rose-50 px-2.5 py-1 rounded-md border border-rose-200"><i class="fa-regular fa-clock me-1"></i> 30 Days Post-AGM</span>
+                    </div>
+                    <h4 class="text-base font-bold text-brand-slate mb-2">SECP Annual Form A / Form 29 Submission</h4>
+                    <p class="text-slate-600 text-xs mb-4">E-filing of Form A (Annual Return) and Form 29 following the Annual General Meeting for Private Limited Companies.</p>
+                    <div class="pt-3 border-t border-slate-200 flex items-center justify-between">
+                        <span class="text-[11px] font-semibold text-slate-500">Target: Corporate Companies</span>
+                        <button onclick="alert('Added SECP Statutory Compliance deadline to your calendar!')" class="text-brand-slate hover:text-brand-teal text-xs font-bold"><i class="fa-regular fa-calendar-plus text-sm"></i> Remind</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KNOWLEDGE & INFO CENTER SECTION -->
+    <section id="knowledge" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-brand-slate uppercase tracking-widest bg-brand-teal-light px-3.5 py-1.5 rounded-full border border-brand-teal/20">Tax Knowledge Hub</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-slate mt-4 tracking-tight">FBR Tax Guides & Frequently Asked Questions</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Search our curated repository for instant answers regarding Active Taxpayer List (ATL) rules, withholding tax rates, and legal compliance.</p>
+                
+                <!-- Search Bar -->
+                <div class="mt-8 relative max-w-xl mx-auto">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-base"></i>
+                    <input type="text" id="faq-search" onkeyup="searchFAQs()" placeholder="Search topics (e.g. Filer benefits, Freelance tax, ATL status, SECP)..." class="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20 shadow-sm transition-all">
+                </div>
+            </div>
+
+            <!-- FAQ Accordion Container -->
+            <div class="max-w-4xl mx-auto space-y-4" id="faq-list">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-slate-200 rounded-2xl p-5 hover:border-brand-teal transition-all bg-slate-50/50">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-bold text-brand-slate text-base sm:text-lg focus:outline-none">
+                        <span>What is the difference between an FBR 'Filer' and 'Non-Filer'?</span>
+                        <i class="fa-solid fa-plus text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        An <strong>Active Filer</strong> is an individual or entity whose name appears on the FBR Active Taxpayer List (ATL) after regularly filing annual income tax returns. Filers enjoy standard or reduced withholding tax rates (e.g. 15% on bank profit, lower property transfer duty). A <strong>Non-Filer</strong> pays up to 100% to 200% higher tax penalties on vehicle purchase, property sales, dividend payments, and cash transactions.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-slate-200 rounded-2xl p-5 hover:border-brand-teal transition-all bg-slate-50/50">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-bold text-brand-slate text-base sm:text-lg focus:outline-none">
+                        <span>How are IT Freelancers and Software Houses taxed in Pakistan?</span>
+                        <i class="fa-solid fa-plus text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Under the Income Tax Ordinance, IT services and software export earnings brought into Pakistan through formal banking channels are subject to a concessional final withholding tax rate of <strong>0.25%</strong>, provided the taxpayer is registered with PSEB (Pakistan Software Export Board) and files annual returns.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-slate-200 rounded-2xl p-5 hover:border-brand-teal transition-all bg-slate-50/50">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-bold text-brand-slate text-base sm:text-lg focus:outline-none">
+                        <span>What happens if I miss the annual Income Tax Return deadline?</span>
+                        <i class="fa-solid fa-plus text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        If you fail to file your tax return by the due date, your name will be removed from the Active Taxpayer List (ATL) on March 1st. To rejoin the ATL, late filers must pay a statutory surcharge (PKR 1,000 for salaried individuals, PKR 10,000 for sole proprietors/businesses, and PKR 20,000 for companies) along with late filing penalties under Section 182.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-slate-200 rounded-2xl p-5 hover:border-brand-teal transition-all bg-slate-50/50">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-bold text-brand-slate text-base sm:text-lg focus:outline-none">
+                        <span>What documents are required for Private Limited Company Incorporation with SECP?</span>
+                        <i class="fa-solid fa-plus text-brand-teal transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 pt-4 border-t border-slate-200 text-slate-600 text-sm leading-relaxed">
+                        Company registration requires: 1) Proposed company name for SECP availability, 2) CNIC/Passport copies of directors and shareholders, 3) Registered office address proof, 4) Memorandum & Articles of Association (MOA/AOA), and 5) Paid-up capital details. Axiom Advisory completes incorporation within 48 to 72 hours.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Downloadable Resources Cards -->
+            <div class="mt-16 pt-12 border-t border-slate-200">
+                <h3 class="text-xl font-bold text-brand-slate text-center mb-8">Download Official Tax Rate Summaries & Ordinance References</h3>
+                <div class="grid sm:grid-cols-3 gap-6">
+                    <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-brand-teal-light/40 transition-colors flex items-start gap-4">
+                        <i class="fa-solid fa-file-pdf text-3xl text-rose-600"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-slate">FBR Salary Slabs TY 2025-26</h4>
+                            <p class="text-xs text-slate-500 mt-1">PDF Guide - 1.2 MB</p>
+                            <a href="#" onclick="alert('Downloading official FBR Salary Slabs document...'); return false;" class="text-xs font-bold text-brand-teal hover:underline mt-3 inline-block">Download PDF <i class="fa-solid fa-download ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-brand-teal-light/40 transition-colors flex items-start gap-4">
+                        <i class="fa-solid fa-file-pdf text-3xl text-rose-600"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-slate">Withholding Tax Rates Card</h4>
+                            <p class="text-xs text-slate-500 mt-1">PDF Reference - 2.1 MB</p>
+                            <a href="#" onclick="alert('Downloading Withholding Tax Rates reference guide...'); return false;" class="text-xs font-bold text-brand-teal hover:underline mt-3 inline-block">Download PDF <i class="fa-solid fa-download ms-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50 hover:bg-brand-teal-light/40 transition-colors flex items-start gap-4">
+                        <i class="fa-solid fa-file-pdf text-3xl text-rose-600"></i>
+                        <div>
+                            <h4 class="font-bold text-sm text-brand-slate">SECP Compliance Checklist</h4>
+                            <p class="text-xs text-slate-500 mt-1">PDF Checklist - 950 KB</p>
+                            <a href="#" onclick="alert('Downloading SECP Corporate Compliance checklist...'); return false;" class="text-xs font-bold text-brand-teal hover:underline mt-3 inline-block">Download PDF <i class="fa-solid fa-download ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT & CONSULTATION BOOKING SECTION -->
+    <section id="contact" class="py-20 bg-brand-slate-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info Box -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold text-brand-teal uppercase tracking-widest bg-brand-slate-deep px-3.5 py-1.5 rounded-full border border-brand-slate">Direct Consultation</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Schedule a Advisory Call With Senior Tax Partner</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Have complex FBR audit notices, wealth reconciliation queries, or SECP corporate structuring questions? Send us your details for a strict confidential evaluation.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-slate/80 border border-brand-slate">
+                            <div class="w-12 h-12 rounded-lg bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Head Office (Lahore)</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Suite 504, 5th Floor, Gulberg Heights, Gulberg III, Lahore, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-slate/80 border border-brand-slate">
+                            <div class="w-12 h-12 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Helpline / WhatsApp</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">+92 (42) 111-000-111 / +92 (300) 8450000</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-brand-slate/80 border border-brand-slate">
+                            <div class="w-12 h-12 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Office Operating Hours</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Monday - Saturday: 9:00 AM - 6:30 PM PKT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Box -->
+                <div class="lg:col-span-7 bg-brand-slate-deep p-6 sm:p-10 rounded-2xl border border-brand-slate shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Book Your Consultation Call</h3>
+                    <p class="text-xs text-slate-400 mb-6">Fill in your information below and our corporate tax team will contact you within 2 hours.</p>
+
+                    <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name *</label>
+                                <input type="text" required placeholder="Muhammad Ali" class="w-full px-4 py-3 bg-brand-slate-dark border border-brand-slate rounded-xl text-white text-xs focus:outline-none focus:border-brand-teal">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Phone / WhatsApp Number *</label>
+                                <input type="tel" required placeholder="+92 300 1234567" class="w-full px-4 py-3 bg-brand-slate-dark border border-brand-slate rounded-xl text-white text-xs focus:outline-none focus:border-brand-teal">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
+                                <input type="email" required placeholder="ali@company.pk" class="w-full px-4 py-3 bg-brand-slate-dark border border-brand-slate rounded-xl text-white text-xs focus:outline-none focus:border-brand-teal">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Service Required</label>
+                                <select class="w-full px-4 py-3 bg-brand-slate-dark border border-brand-slate rounded-xl text-white text-xs focus:outline-none focus:border-brand-teal">
+                                    <option>Individual Income Tax Return Filing</option>
+                                    <option>Freelancer / IT Export Tax Advisory</option>
+                                    <option>Sales Tax / FBR & PRA Registration</option>
+                                    <option>SECP Private Limited Formation</option>
+                                    <option>FBR Audit Notice / Appeal Defense</option>
+                                    <option>Corporate Bookkeeping & Audit</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Brief Description of Tax Query or Assistance Needed</label>
+                            <textarea rows="4" placeholder="Mention your current tax status, income type, or any FBR notice received..." class="w-full px-4 py-3 bg-brand-slate-dark border border-brand-slate rounded-xl text-white text-xs focus:outline-none focus:border-brand-teal"></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Attach Supporting Document (Optional PDF / Image)</label>
+                            <input type="file" class="w-full text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-brand-slate file:text-brand-teal hover:file:bg-brand-slate/80">
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-brand-teal hover:bg-brand-teal-hover text-white font-extrabold rounded-xl text-xs uppercase tracking-wider transition-all shadow-lg shadow-brand-teal/20">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+
+                    <!-- Success Message Box -->
+                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs text-center">
+                        <i class="fa-solid fa-circle-check text-lg mb-1 block"></i>
+                        Thank you! Your query has been submitted. A tax consultant will call you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-slate-deep text-slate-400 text-xs border-t border-brand-slate pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand Info -->
+                <div class="col-span-2 md:col-span-1 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <svg class="h-8 w-auto shrink-0" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M 15,48 C 15,32 38,12 88,10 C 70,18 42,32 36,48 C 32,58 38,62 50,62 C 68,62 88,48 88,48 C 88,48 55,62 38,72 C 26,79 15,64 15,48 Z" fill="#28b8c8"/>
+                            <path d="M 15,76 C 15,60 38,40 88,38 C 70,46 42,60 36,76 C 32,86 38,90 50,90 C 68,90 88,76 88,76 C 88,76 55,90 38,100 C 26,107 15,92 15,76 Z" fill="#28b8c8"/>
+                            <path d="M 15,78 C 15,92 28,108 28,114 C 28,114 42,95 58,85 C 40,88 24,88 15,78 Z" fill="#28b8c8"/>
+                            <path d="M 60,90 L 88,74 L 88,106 Z" fill="#28b8c8"/>
+                        </svg>
+                        <div class="h-7 w-[1.5px] bg-[#b4c8ce] mx-0.5 opacity-80"></div>
+                        <div class="flex flex-col justify-center">
+                            <span class="text-xl font-black text-white leading-none font-sans" style="font-weight: 900; letter-spacing: -0.02em;">AXIOM</span>
+                            <span class="text-[9px] tracking-[0.22em] text-[#b4c8ce] font-bold uppercase block mt-0.5 leading-none">ADVISORY</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Licensed corporate tax consultants, chartered management accountants, and SECP secretarial advisors providing premier financial services across Pakistan.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Core Services</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#services" class="hover:text-brand-teal transition-colors">Income Tax Return</a></li>
+                        <li><a href="#services" class="hover:text-brand-teal transition-colors">Sales Tax STRN</a></li>
+                        <li><a href="#services" class="hover:text-brand-teal transition-colors">SECP Incorporation</a></li>
+                        <li><a href="#services" class="hover:text-brand-teal transition-colors">Freelancer Tax 0.25%</a></li>
+                        <li><a href="#services" class="hover:text-brand-teal transition-colors">FBR Notice Appeals</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tools & Resources -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Portals & Tools</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#calculator" class="hover:text-brand-teal transition-colors">Pakistan Tax Calculator</a></li>
+                        <li><a href="#calendar" class="hover:text-brand-teal transition-colors">FBR Tax Calendar</a></li>
+                        <li><a href="#knowledge" class="hover:text-brand-teal transition-colors">Knowledge Center</a></li>
+                        <li><a href="https://iris.fbr.gov.pk/" target="_blank" rel="noopener" class="hover:text-brand-teal transition-colors flex items-center gap-1">FBR Iris Portal <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a></li>
+                        <li><a href="https://eservices.secp.gov.pk/" target="_blank" rel="noopener" class="hover:text-brand-teal transition-colors flex items-center gap-1">SECP eServices <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Office Locations -->
+                <div>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Office Locations</h4>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><strong class="text-slate-200">Lahore:</strong> Gulberg Heights, Gulberg III</li>
+                        <li><strong class="text-slate-200">Karachi:</strong> Shahrah-e-Faisal, PECHS</li>
+                        <li><strong class="text-slate-200">Islamabad:</strong> Blue Area, Sector G-7</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Disclaimer & Copyright -->
+            <div class="pt-8 border-t border-brand-slate text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[11px] text-slate-500">
+                    &copy; 2026 Axiom Advisory Services (Pvt) Ltd. All Rights Reserved.
+                </p>
+                <div class="flex gap-4 text-base text-slate-400">
+                    <a href="#" class="hover:text-brand-teal"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-brand-teal"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-brand-teal"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="hover:text-brand-teal"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC & INTERACTIVITY -->
+    <script>
+        // --- MOBILE MENU TOGGLE ---
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- TAX CALCULATOR STATE & LOGIC ---
+        let currentCategory = 'salary'; // 'salary' or 'business'
+        let currentFrequency = 'monthly'; // 'monthly' or 'yearly'
+
+        function setTaxType(type) {
+            currentCategory = type;
+            const salaryBtn = document.getElementById('type-salary');
+            const businessBtn = document.getElementById('type-business');
+
+            if (type === 'salary') {
+                salaryBtn.className = "py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-brand-teal text-white shadow-md";
+                businessBtn.className = "py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white";
+            } else {
+                businessBtn.className = "py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-brand-teal text-white shadow-md";
+                salaryBtn.className = "py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white";
+            }
+            calculateTax();
+        }
+
+        function setFrequency(freq) {
+            currentFrequency = freq;
+            const monthlyBtn = document.getElementById('freq-monthly');
+            const yearlyBtn = document.getElementById('freq-yearly');
+
+            if (freq === 'monthly') {
+                monthlyBtn.className = "text-brand-teal font-bold";
+                yearlyBtn.className = "text-slate-400 hover:text-white";
+            } else {
+                yearlyBtn.className = "text-brand-teal font-bold";
+                monthlyBtn.className = "text-slate-400 hover:text-white";
+            }
+            calculateTax();
+        }
+
+        function syncSliderToInput(val) {
+            document.getElementById('income-input').value = val;
+            document.getElementById('slider-val-display').innerText = `PKR ${parseInt(val).toLocaleString()} / month`;
+            calculateTax();
+        }
+
+        function calculateTax() {
+            let inputAmount = parseFloat(document.getElementById('income-input').value) || 0;
+            let zakat = parseFloat(document.getElementById('zakat-input').value) || 0;
+            let wht = parseFloat(document.getElementById('wht-input').value) || 0;
+
+            document.getElementById('income-slider').value = inputAmount;
+            document.getElementById('slider-val-display').innerText = `PKR ${Math.round(inputAmount).toLocaleString()} / ${currentFrequency === 'monthly' ? 'month' : 'year'}`;
+
+            let annualGross = currentFrequency === 'monthly' ? inputAmount * 12 : inputAmount;
+            let taxableIncome = Math.max(0, annualGross - zakat);
+
+            let annualTax = 0;
+            let slabText = "";
+
+            if (currentCategory === 'salary') {
+                if (taxableIncome <= 600000) {
+                    annualTax = 0;
+                    slabText = "Up to Rs. 600,000 (Exempt - 0%)";
+                } else if (taxableIncome <= 1200000) {
+                    annualTax = (taxableIncome - 600000) * 0.05;
+                    slabText = "Rs. 600k to 1.2M (5% above 600k)";
+                } else if (taxableIncome <= 2200000) {
+                    annualTax = 30000 + (taxableIncome - 1200000) * 0.15;
+                    slabText = "Rs. 1.2M to 2.2M (Rs. 30k + 15%)";
+                } else if (taxableIncome <= 3200000) {
+                    annualTax = 180000 + (taxableIncome - 2200000) * 0.25;
+                    slabText = "Rs. 2.2M to 3.2M (Rs. 180k + 25%)";
+                } else if (taxableIncome <= 4100000) {
+                    annualTax = 430000 + (taxableIncome - 3200000) * 0.30;
+                    slabText = "Rs. 3.2M to 4.1M (Rs. 430k + 30%)";
+                } else {
+                    annualTax = 700000 + (taxableIncome - 4100000) * 0.35;
+                    slabText = "Exceeding Rs. 4.1M (Rs. 700k + 35%)";
+                }
+            } else {
+                if (taxableIncome <= 600000) {
+                    annualTax = 0;
+                    slabText = "Up to Rs. 600,000 (Exempt - 0%)";
+                } else if (taxableIncome <= 1200000) {
+                    annualTax = (taxableIncome - 600000) * 0.15;
+                    slabText = "Rs. 600k to 1.2M (15% above 600k)";
+                } else if (taxableIncome <= 1600000) {
+                    annualTax = 90000 + (taxableIncome - 1200000) * 0.20;
+                    slabText = "Rs. 1.2M to 1.6M (Rs. 90k + 20%)";
+                } else if (taxableIncome <= 3200000) {
+                    annualTax = 170000 + (taxableIncome - 1600000) * 0.30;
+                    slabText = "Rs. 1.6M to 3.2M (Rs. 170k + 30%)";
+                } else if (taxableIncome <= 5600000) {
+                    annualTax = 650000 + (taxableIncome - 3200000) * 0.40;
+                    slabText = "Rs. 3.2M to 5.6M (Rs. 650k + 40%)";
+                } else {
+                    annualTax = 1610000 + (taxableIncome - 5600000) * 0.45;
+                    slabText = "Exceeding Rs. 5.6M (Rs. 1.61M + 45%)";
+                }
+            }
+
+            let netPayable = Math.max(0, annualTax - wht);
+            let monthlyTax = netPayable / 12;
+            let monthlyGross = annualGross / 12;
+            let monthlyTakeHome = monthlyGross - monthlyTax;
+            let effectiveRate = annualGross > 0 ? (annualTax / annualGross) * 100 : 0;
+
+            document.getElementById('res-monthly-tax').innerText = `PKR ${Math.round(monthlyTax).toLocaleString()}`;
+            document.getElementById('res-monthly-takehome').innerText = `PKR ${Math.round(monthlyTakeHome).toLocaleString()}`;
+            document.getElementById('res-annual-gross').innerText = `PKR ${Math.round(annualGross).toLocaleString()}`;
+            document.getElementById('res-taxable-income').innerText = `PKR ${Math.round(taxableIncome).toLocaleString()}`;
+            document.getElementById('res-slab-info').innerText = slabText;
+            document.getElementById('res-annual-tax').innerText = `PKR ${Math.round(annualTax).toLocaleString()}`;
+            document.getElementById('res-effective-rate').innerText = `${effectiveRate.toFixed(2)}%`;
+            document.getElementById('res-net-payable').innerText = `PKR ${Math.round(netPayable).toLocaleString()}`;
+        }
+
+        function toggleSlabsTable() {
+            const container = document.getElementById('slabs-container');
+            const icon = document.getElementById('slabs-icon');
+            container.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        function filterCalendar(category) {
+            const tabs = document.querySelectorAll('.cal-tab');
+            tabs.forEach(tab => {
+                tab.className = "cal-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-slate-700 hover:bg-slate-200 border border-slate-300";
+            });
+
+            event.currentTarget.className = "cal-tab active px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-slate text-brand-teal shadow";
+
+            const items = document.querySelectorAll('.cal-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            answer.classList.toggle('hidden');
+            if (answer.classList.contains('hidden')) {
+                icon.className = "fa-solid fa-plus text-brand-teal transition-transform";
+            } else {
+                icon.className = "fa-solid fa-minus text-brand-teal transition-transform";
+            }
+        }
+
+        function searchFAQs() {
+            const query = document.getElementById('faq-search').value.toLowerCase();
+            const faqs = document.querySelectorAll('#faq-list .faq-item');
+
+            faqs.forEach(faq => {
+                const text = faq.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    faq.style.display = 'block';
+                } else {
+                    faq.style.display = 'none';
+                }
+            });
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('consultation-form');
+            const successMsg = document.getElementById('form-success');
+
+            form.reset();
+            successMsg.classList.remove('hidden');
+
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        }
+
+        window.onload = function() {
+            calculateTax();
+        };
+    </script>
+</body>
+</html>
